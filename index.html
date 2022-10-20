@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring the DOM</title>
+
+  <!-- Having JavaScript included here, at the top of the file, ensures it starts loading soon -->
+  <!-- The defer attribute ensures it waits for the HTML to be fully loaded before it actually fires -->
+  <!-- This can prevent a situation where JavaScript tries to work with an element that has not been loaded yet -->
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <body id="body-id">
+  <header>
+    <h1>BeCode DOM exploration | <strong>Basics</strong></h1>
+  </header>
+
+  <main>
+    <section>
+      <h1>Hello DOM</h1>
+      <img class="important" id= "image1" title ="this is an important item"  src="./images/Queen.jpg" alt="picture"  >
+      <img   id ="image2" src="./images/fingerprint.png" alt="picture2" width="450px"  height="450px" >
+      <img   id ="image2" src="./images/jet.svg" alt="picture2" width="450px"  height="450px" >
+      <p>The DOM is a powerful tool</p>
+      <p id ="p2">
+        This is a <a href="homepage.html">link</a>, this is <a href="contact.html" id="bold">another link</a>.
+      </p>
+      <p class="para3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem asperiores et distinctio eius in necessitatibus voluptates animi, rerum, quis iusto nemo totam iure? Maiores adipisci rem nisi perferendis porro expedita?</p>
+    </section>
+
+    <section class="johnsons">
+      <h2 title="Johnson">The Johnsons group</h2>
+      <article id="ArticleJhonson">
+            ipsum dolor, sit amet consectetur adipisicing elit. Tempora cumque explicabo sequi beatae in temporibus reiciendis molestias natus maxime tempore unde sed neque odit, accusamus dolores voluptas? Culpa, natus possimus.
+      </article>
+      <ul>
+        <li>List all the elements (nodes) on a webpage</li>
+        <li>Modify those nodes programmatically</li>
+        <li>Create new nodes</li>
+        <li>React to user events (mouse clicks, keyboard typing, window resizing, ...)</li>
+      </ul>
+    <section>  
+      A list of things that matters
+      <p>
+        <ol>
+          <li>Sleep well</li>
+          <li>Eat well</li>
+          <li>Self care</li>
+          <li>Learning to code</li>
+          <li>The Fast and Furious film franchise</li>
+        </ol>
+      </p>
+    </section>
+    
+    
+
+
+<section>
+  <h2>The third section</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dolorem explicabo in fugiat natus. Illum, cum exercitationem? Earum doloribus esse velit expedita illo hic enim, sed voluptatem, omnis officia ipsam!</p>
+</section>
+
+<section>
+  <div>
+    <h2>The second section</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, dolor dolorem dolores eaque animi sint facere aperiam ducimus deleniti! A doloribus quo iste animi inventore laborum amet ea cumque suscipit?</p>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    All right reserved, blablablabla ...
+  </footer>
+ 
+</body>
+</html>
