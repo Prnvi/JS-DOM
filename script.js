@@ -27,8 +27,8 @@ console.log(document.querySelectorAll);
 
 
 console.log(document.getElementsByTagName("this is an important item"));
-console.log(document.all[27]);
-document.all[16].textContent="Hello";
+// console.log(document.all[27]);
+// document.all[16].textContent="Hello";
 
 // Random color for background
 
@@ -75,8 +75,9 @@ function random_bg_color(){
 //didnt work
     //  const boldAnchor = document.querySelector('p#href')
     // console.log(boldAnchor.innerText) // "another link"
+    //displaying the text inside the bold tag, which is inside a linnk tag
 
-    const boldAnchor = document.querySelector('a#bold')
+    const boldAnchor = document.querySelector('#bold')
     console.log(boldAnchor.innerText)
 
     //Select all the img tags and loop through them. If they have no important class, turn their display property to none
@@ -157,24 +158,88 @@ for(let i=0;i<26;i++){
 
     }
 }
-
-
+//4. Navigate
 //Example of first child
 const section = document.querySelector('section')
 const sectionsChildren = section.children
 console.log(sectionsChildren) 
 
 // Get the element that comes after the first child 
+
 console.log(section.children[0].nextElementSibling)
 
-//moving a node example
+//moving a node example given in the query
 
 // const section = document.querySelector('section')
 // const a = section.children[0]
 // const b = section.children[1]
 // b.appendChild(a)
 
+
 const section2 = document.querySelector('main')
 const sectChild = section2.children
 console.log(sectChild)
 console.log(section2.children[0])
+
+const obj = document.querySelector('section')
+const one = obj.children[0]
+const two = obj.children[4]
+// two.appendChild(one)
+
+
+console.log(one)
+console.log(two)
+
+// Move the <h2> of the third section in the second one and vice-versa
+
+const sectionContent = document.querySelectorAll("section")[0]
+console.log(sectionContent)
+const HelloDom = sectionContent.children[0]
+console.log(HelloDom)//hello d
+
+const sectionContent1 = document.querySelector(".johnsons")
+const jhon1 = sectionContent1.children[0]
+
+const jhon2 = sectionContent.children[1]
+console.log(sectionContent)
+console.log(jhon1)
+
+// jhon1.appendChild(HelloDom)
+// console.log(jhon1.appendChild(jhon2))
+
+var listParent =document.getElementById("things_that_matter");
+console.log(listParent)
+var lastList = listParent.querySelectorAll('li')[4]
+console.log(lastList)
+var olList = listParent.querySelector('ol')
+console.log(olList)
+olList.prepend(lastList)
+
+
+
+const list_element = document.getElementById("things_that_matter");   // order: first, second, third
+const li1 = list_element.children[2]
+console.log(li1)
+
+console.log(list_element)
+
+
+// Move the <h2> of the third section in the second one and vice-versa
+
+var swap1 = document.querySelector("section")
+var tagh2 = document.querySelector("h2")
+
+console.log(swap1,tagh2)
+var swap2 = document.querySelector(".johnsons section")
+var tagh2John = document.querySelectorAll('h2')[1]
+ 
+swap1.prepend(tagh2John)
+swap2.prepend(tagh2)
+
+
+console.log(swap2,tagh2John)
+
+// Delete the last section from the DOM, we don't need it anyways
+
+const footer = document.querySelector("footer")
+footer.remove()
